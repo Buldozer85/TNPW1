@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
-
 :root {
     --link-color: #0151C4;
     --link-color-bold: #01398A;
@@ -7,7 +6,6 @@
 
 * {
     font-family: 'Ubuntu', sans-serif;
-
 }
 
 .blue {
@@ -17,7 +15,6 @@
 body {
     margin: 0;
     padding: 0;
-  
 }
 
 header {
@@ -30,9 +27,9 @@ header {
 
 header img {
     max-width: 16rem;
-  
 }
-header nav ul{
+
+header nav ul {
     height: 100%;
     width: 100%;
     display: flex;
@@ -51,7 +48,6 @@ header nav ul li {
     align-items: center;
     transition: all 300ms cubic-bezier(0.075, 0.82, 0.165, 1);
     cursor: pointer;
-    
 }
 
 header nav ul li::after {
@@ -62,15 +58,13 @@ header nav ul li::after {
     display: block;
     transition: all 0.3s ease;
     bottom: 15%;
-
 }
 
 header nav ul li:hover::after {
     width: 100%;
     height: 2px;
     background-color: var(--link-color-bold);
-  }
-
+}
 
 header nav ul li a {
     text-decoration: none;
@@ -82,8 +76,7 @@ header nav ul li a {
 
 header nav ul li a:hover {
     transition: color 10ms ease-in;
-     color: var(--link-color-bold);
-   
+    color: var(--link-color-bold);
 }
 
 .current-page::after {
@@ -160,19 +153,18 @@ main h1 {
     display: flex;
     flex-direction: row;
     align-items: center;
-  
+    padding-bottom: 10rem;
 }
 
 .service-wrapper {
     display: flex;
     flex-direction: column;
-    padding:30px 2%;
+    padding: 30px 2%;
     margin: 0 2%;
     text-align: center;
     flex: 1;
-    -webkit-box-shadow: 5px 5px 12px -1px rgba(0,0,0,0.25); 
-    box-shadow: 5px 5px 12px -1px rgba(0,0,0,0.25);
-
+    -webkit-box-shadow: 5px 5px 12px -1px rgba(0, 0, 0, 0.25);
+    box-shadow: 5px 5px 12px -1px rgba(0, 0, 0, 0.25);
 }
 
 .service-wrapper svg {
@@ -189,7 +181,7 @@ main h1 {
 
 .service-wrapper a {
     text-decoration: none;
-     background-color: var(--link-color);
+    background-color: var(--link-color);
     padding: 15px 20px;
     border-radius: 10px;
     color: white;
@@ -200,9 +192,21 @@ main h1 {
     transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
+.numbers-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 10rem;
+}
+
+.numbers-wrapper h2 {
+    font-size: 2rem;
+}
+
 footer {
     padding: 10rem 0 2rem 0;
-    background-color: var(--link-color) ;
+    background-color: var(--link-color);
     color: white;
     text-align: center;
 }
