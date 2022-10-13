@@ -42,8 +42,12 @@ header {
 }
 
 header img {
-    max-width: 16rem;
+ width: 100%;
 }
+
+.header-logo-image-wrapper  {
+       max-width: 200px;
+    }
 
 header nav ul {
     height: 100%;
@@ -86,7 +90,7 @@ header nav ul li a {
     height: 2px;
     background-color: var(--link-color-bold);
     display: block;
-    bottom: 12%;
+    bottom: 10%;
 }
 
 .logo-wrapper {
@@ -141,8 +145,8 @@ header nav ul li a {
     header {
         flex-direction: row;
         justify-content: space-between;
-        padding: 20px 2.5rem;
-        margin: 0 10%;
+        padding: 20px 0;
+        margin: 0 6%;
     }
 
     .logo-wrapper {
@@ -152,10 +156,13 @@ header nav ul li a {
     header nav ul {
         flex-direction: row;
         width: 100%;
+        margin: 0;
     }
 
     header nav ul li {
         padding: 0;
+        font-size: 12px;
+         margin-right: 2px;
     }
 
     header nav ul li::after {
@@ -165,7 +172,7 @@ header nav ul li a {
         height: 2px;
         display: block;
         transition: all 0.3s ease;
-        bottom: 15%;
+        bottom: 10%;
     }
 
     header nav ul li:hover::after {
@@ -177,6 +184,9 @@ header nav ul li a {
     header nav ul li a:hover {
         transition: color 10ms ease-in;
         color: var(--link-color-bold);
+    }
+    .header-logo-image-wrapper  {
+       max-width: 200px;
     }
 
     .logo-wrapper svg {
@@ -199,6 +209,20 @@ header nav ul li a {
     .header-text-wrapper h1 {
         font-size: 4rem;
         line-height: 5rem;
+    }
+}
+
+@media only screen and (min-width:1024px){
+    header {
+        margin: 0 10%;
+    }
+     header nav ul li {
+        font-size: 16px;
+        margin-right: 10px;
+    }
+
+     .header-logo-image-wrapper  {
+       max-width: 300px;
     }
 }
 
@@ -286,10 +310,10 @@ main h1 {
     line-height: 5rem;
 }
 
-@media  screen and (min-width:768px) {
+@media screen and (min-width:768px) {
     main {
         padding-top: 5rem;
-        margin: 0 10%;
+        margin: 0 6%;
     }
 
     main h1 {
@@ -318,6 +342,12 @@ main h1 {
     .interested-section-wrapper h1 {
         font-size: 2.5rem;
         line-height: 4rem;
+    }
+}
+
+@media only screen and (min-width:1024px){
+      main {
+        margin: 0 10%;
     }
 }
 
@@ -361,10 +391,19 @@ footer {
     .footer-content-wrapper {
         flex-direction: row;
         justify-content: space-between;
+        margin: 0 6%;
+    }
+}
+
+@media only screen and (min-width:1024px) {
+      .footer-content-wrapper {
         margin: 0 10%;
     }
-
-    .socials-wrapper {
-    
 }
+
+/*contact.html*/
+
+.contact-label-wrapper {
+    background-color: var(--link-color);
+    padding: 5% ;
 }
