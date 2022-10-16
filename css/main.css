@@ -2,6 +2,10 @@
 :root {
     --link-color: #0151C4;
     --link-color-bold: #01398A;
+    --shadow: 5px 5px 12px -1px rgba(0, 0, 0, 0.25);
+    --section-pb-big: 10rem;
+    --section-pb-mobile: 5rem;
+
 }
 
 * {
@@ -26,6 +30,10 @@
 .big-button:hover {
     background-color: var(--link-color-bold);
     transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.pb-5 {
+    padding-bottom: 5rem;
 }
 
 body {
@@ -207,8 +215,8 @@ header nav ul li a {
     }
 
     .header-text-wrapper h1 {
-        font-size: 4rem;
-        line-height: 5rem;
+        font-size: 3rem;
+        line-height: 3.50rem;
     }
 }
 
@@ -223,6 +231,11 @@ header nav ul li a {
 
      .header-logo-image-wrapper  {
        max-width: 300px;
+    }
+
+    .header-text-wrapper h1 {
+        font-size: 4rem;
+        line-height: 5rem;
     }
 }
 
@@ -406,4 +419,138 @@ footer {
 .contact-label-wrapper {
     background-color: var(--link-color);
     padding: 5% ;
+}
+
+.header-img-wrapper iframe {
+   width: 100%;
+   height: 400px;
+   box-shadow: var(--shadow);
+}
+
+.contact-form-wrapper {
+    padding-bottom: var(--section-pb-mobile);
+}
+
+.contact-form-wrapper h1 {
+    padding-bottom: 2rem;
+    text-align: center;
+}
+
+.contact-form-wrapper h2 {
+    text-align: center;
+}
+
+.contact-form-wrapper form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 900px;
+    margin: auto
+}
+
+.contact-form-wrapper form input[type="text"],
+.contact-form-wrapper form input[type="email"]  {
+    padding: 20px;
+    border-radius: 13px;
+    border: 2px solid var(--link-color-bold);
+    margin: 2% 2%;
+    box-shadow: var(--shadow)
+ 
+}
+
+.contact-form-wrapper form textarea {
+    border-radius: 13px;
+    border: 2px solid var(--link-color-bold);
+    padding: 20px;
+    margin: 0 2%;
+    
+}
+
+.inputs-wrapper {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 20px;
+    justify-content: center;
+    width: 100%;
+}
+
+.checkbox-wrapper {
+    padding: 20px 0;
+    margin: 0 2%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.checkbox-wrapper label {
+    font-size: 1.25rem;
+    margin-left: 15px;
+}
+
+.checkbox-wrapper input[type = "checkbox"] {
+    height: 20px;
+    width: 20px;
+    cursor: pointer;
+}
+
+.contact-button-wrapper {
+    display: flex;
+    justify-content: flex-end;
+    margin: 0 2%;
+}
+
+.contacts-wrapper {
+    display: flex;
+    flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     padding-bottom: var(--section-pb-mobile);
+}
+
+.contacts-wrapper > div {
+    margin: 0 6%;
+}
+
+.contacts-wrapper > div > h2 {
+    text-align: center;
+    color: var(--link-color);
+}
+
+.company-ids-wrapper {
+    display: flex;
+    flex-direction: row;
+}
+
+.company-ids-wrapper p:nth-child(2) {
+    margin-left: 10px;
+}
+
+@media only screen and (min-width:768px) {
+    .contact-form-wrapper form input[type="text"],
+    .contact-form-wrapper form input[type="email"]  {
+        width: 100%;
+    }   
+
+    .inputs-wrapper {
+        flex-direction: row;
+    }
+
+    .contacts-wrapper {
+        flex-direction: row;
+        padding-bottom: var(--section-pb-big);
+         align-items: baseline;
+    }
+    
+    .contact-form-wrapper {
+        padding-bottom: var(--section-pb-big);
+    }
+
+    .contacts-wrapper > div {
+        margin: 0 10%;
+        font-size: 1.25rem;  
+    }
+
+    .contacts-wrapper > div {
+        margin: 0 10%;
+    }
 }
