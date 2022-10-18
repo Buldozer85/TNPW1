@@ -89,6 +89,10 @@ header nav ul li a {
   font-weight: bold;
 }
 
+header nav ul li a:visited {
+  color: var(--link-color);
+}
+
 .current-page::after {
   content: "";
   position: absolute;
@@ -198,7 +202,7 @@ header nav ul li a {
   }
 
   .header-image-section-wrapper {
-    padding: 20rem 0;
+    padding: 10rem 0 15rem 0;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -732,4 +736,39 @@ footer {
 
 .leader-wrapper h2 {
   text-align: center;
+}
+/*References*/
+
+.gallery-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-bottom: var(--section-pb-mobile);
+}
+
+.gallery-image-wrapper {
+  max-width: 300px;
+  margin: 2% 4%;
+  flex: 1 1 320px;
+}
+
+.gallery-image-wrapper img {
+  width: 100%;
+}
+
+.gallery-image-wrapper a {
+  text-decoration: none;
+  color: var(--link-color);
+}
+
+.gallery-image-wrapper a p {
+  text-align: center;
+}
+
+@media only screen and (min-width: 768px) {
+  .gallery-wrapper {
+  justify-content: space-between;
+  padding-bottom: var(--section-pb-big);
+}
+
 }
