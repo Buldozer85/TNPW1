@@ -2,12 +2,12 @@
 <html lang="cs">
 
 <head>
-  <meta charset="utf-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>Fresh Dev Company: Kontakt</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
-  <link rel="shortcut icon" href="img/fdc_icon.png" type="image/x-icon" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" media="screen" href="css/main.css">
+  <link rel="shortcut icon" href="img/fdc_icon.png" type="image/x-icon">
   <meta name="description" content="Stránka kontaktu firmy Fresh Dev Company">
 </head>
 
@@ -16,7 +16,7 @@
     <div class="logo-wrapper">
       <div class="header-logo-image-wrapper">
         <a href="index.html">
-          <img src="img/logo_blue.png" alt="Fresh Dev Company" />
+          <img src="img/logo_blue.png" alt="Fresh Dev Company">
         </a>
       </div>
       <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
@@ -27,7 +27,7 @@
     <nav>
       <ul>
         <li>
-          <a href="index.html">Domovská stránka</a>
+          <a href="index.html#">Domovská stránka</a>
         </li>
 
         <li>
@@ -100,14 +100,16 @@
       <h2 class="pb-5">Neváhejte nás kontaktovat pomocí formuláře níže.</h2>
       <form action="#" method="post">
         <div class="inputs-wrapper">
-          <input type="text" name="name" id="name" placeholder="Jméno" />
-          <input type="email" name="email" id="email" placeholder="E-mail" />
+          <label for="name" class="hidden">Jméno</label>
+          <input type="text" name="name" id="name" placeholder="Jméno">
+          <label class="hidden" for="email">email</label>
+          <input type="email" name="email" id="email" placeholder="E-mail">
         </div>
-
+        <label for="message" class="hidden">Dotaz</label>
         <textarea name="message" id="message" cols="30" rows="10" placeholder="Napište svůj dotaz"></textarea>
 
         <div class="checkbox-wrapper">
-          <input type="checkbox" name="agree" id="agree" />
+          <input type="checkbox" name="agree" id="agree">
           <label for="agree"><span class="blue">Souhlasím</span> se zpracováním osobních
             údajů</label>
         </div>
@@ -122,7 +124,7 @@
   <footer>
     <div class="footer-content-wrapper">
       <div>
-        <h3>Fresh Dev Company s.r.o.</h3>
+        <h2>Fresh Dev Company s.r.o.</h2>
         <p>Hradecká 1249/6, 500 03 Hradec&nbsp;Králové</p>
         <p>IČO: 551511</p>
         <p>DIČ: 555561</p>
@@ -133,22 +135,22 @@
       </div>
 
       <div>
-        <h3>Sledujte nás na</h3>
+        <h2>Sledujte nás na</h2>
 
         <div class="socials-wrapper">
           <div>
             <a href="https://www.facebook.com/">
-              <img src="img/socials/f_logo_RGB-Blue_58.png" alt="Facebook" />
+              <img src="img/socials/f_logo_RGB-Blue_58.png" alt="Facebook">
             </a>
           </div>
           <div>
             <a href="https://www.instagram.com/">
-              <img src="img/socials/Instagram_Glyph_Gradient.png" alt="Instagram" />
+              <img src="img/socials/Instagram_Glyph_Gradient.png" alt="Instagram">
             </a>
           </div>
           <div>
             <a href="https://cz.linkedin.com/">
-              <img src="img/socials/LI-In-Bug.png" alt="Linkedln" />
+              <img src="img/socials/LI-In-Bug.png" alt="Linkedln">
             </a>
           </div>
         </div>

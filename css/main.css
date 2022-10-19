@@ -18,6 +18,9 @@
 .pb-0 {
   padding-bottom: 0 !important;
 }
+.hidden {
+  display: none;
+}
 
 .big-button {
   background-color: var(--link-color);
